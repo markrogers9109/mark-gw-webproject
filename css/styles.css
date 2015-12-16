@@ -1,11 +1,370 @@
-h1 a {
-     color:#009933;
+/* primary color: #00cc66 */
+/* secondary color: #e6c200 */
+/*#ffff00*/
+
+/*=========================================GLOBAL STYLES=========================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Play:700,400|Shadows+Into+Light|Pacifico|Bangers|Russo+One|Permanent+Marker|Rock+Salt|Audiowide|Yellowtail);
+
+
+html, body {
+     width:100%;
+     height:100%;
+     margin:0px;
+     padding:0px;
+}
+
+body {
+     background-color:#FFFFFF;
+     font-family:'Source sans pro', Trebuche MS, sans-serif;
+     font-size:16px;
+     font-weight:700;
+     color:#000000 /*!important*/;
+}
+
+h1, h2, h3, h4 {
+     margin:0px;
+     padding:0px;
+     color:#37949b /*dark green*/;
+}
+
+p {
+     line-height:125%;
+     margin:15px 0px;
+}
+b, strong {
+     color:#37949b;
+}
+
+a {
+     color:#FFFFFF;
      text-decoration:none;
 }
+
+a:hover {
+     color:#e6c200;
+}
+
+.mainBody {
+     overflow:hidden;
+     margin:0px auto; /*THE MARGIN AUTO HAS TO BE USED WITH WIDTH*/
+     width:1200px;
+}
+
+
+/*=========================================HEADER STYLES=========================================*/
+
+header {
+     background-color:#37949b;
+}
+
+#headerBlock {
+     padding:15px 0px;
+}
+
+#logo {
+     color:#37949b;
+}
+
+#logo a:hover {
+     color:#e6c200;
+}
+
+h1 a {
+     float:right;
+     margin-top: -130px;
+     margin-right: 50px;
+}
+
+h4 i {
+	color:#e6c200;
+	float:right;
+     margin-top: -97px;
+     margin-right: 50px;
+}
+
+#logoMr {
+	height:150px;
+	margin-bottom: -2px;
+	margin-left:20px;
+}
+
+/*===========================================MENU NAVIGATION===================================================*/
+
 #menu {
+     position:absolute;
+     top:142px;
+     right:44px;
+}
+
+#menu ul {
+     display:inline-block;
+}
+
+#menu ul li {
      display:inline;
-     background-color:#009933;
+     float:left;
+     text-align:center;
 }
-p {
-     color:#339966;
+
+#menu ul li a {
+     color:#FFFFFF;
+     background-color:#e6c200;
+     margin:0px 6.5px;
+     padding: 10px 15px 10px 15px;
+     border-radius: 80px 0px 60px 0px
 }
+
+#menu ul li a:hover {
+	color:#e6c200;
+     background-color:#FFFFFF;
+}
+
+#menu-ac {
+     position:absolute;
+     top:139px;
+     right:44px;
+}
+
+#menu-ac ul {
+     display:inline-block;
+}
+
+#menu-ac ul li {
+     display:inline;
+     float:left;
+     text-align:center;
+}
+
+#menu-ac ul li a {
+     color:#FFFFFF;
+     background-color:#e6c200;
+     margin:0px 6.5px;
+     padding: 10px 15px 10px 15px;
+     border-radius: 80px 0px 60px 0px
+}
+
+#menu-ac ul li a:hover {
+	color:#e6c200;
+     background-color:#FFFFFF;
+}
+
+.currentPage a {
+     color:#37949b !important;
+     background-color:#FFFFFF !important;
+}
+
+
+
+
+
+
+/*
+==================================================
+BANNER STYLES
+==================================================
+*/
+
+#bannerHome {
+     overflow:hidden;
+     padding:125px 0px;
+     border-top:3px solid #37949b;
+     background-size:cover;
+     background:url(../images/banner2-home-image.jpg) no-repeat top center #e6c200;
+}
+
+.bannerText {
+     color:#FFFFFF;
+     font-size:6em;
+     text-align:center;
+     text-shadow:4px 4px 10px #000000;
+}
+
+.bannerText-ac {
+     color:#37949b;
+     font-size:6em;
+     text-align:center;
+}
+
+
+#bannerAbout {
+     overflow:hidden;
+     padding:25px 0px;
+     border-top:3px solid #37949b;
+     background-size:cover;
+     background:no-repeat top center;
+}
+
+#bannerContact {
+     overflow:hidden;
+     padding:25px 0px;
+     border-top:3px solid #37949b;
+     background-size:cover;
+     background:no-repeat top center;
+}
+
+#wufoo-zu31phh0b59ygo {
+     width:500px;
+     height:575px;
+     margin:50px 60px 0px 100px;
+     box-shadow:0px 0px 12px #000000;
+     padding:5px;
+     float:left;
+}
+
+#map {
+     margin:36px 0px 50px 0px; 
+}
+
+.contactImg {
+     width:300px;
+     margin-left:100px;
+}
+
+/*====================================== MAIN BODY STYLES=======================================*/
+
+.columnA, .columnB, .columnC {
+     width:384px;
+     margin-bottom:50px;
+}
+
+.columnA, .columnB {
+     float:left;
+     margin-right:24px;
+}
+
+.columnC {
+     float:left;
+}
+
+.columnA h2, .columnB h2, .columnC h2 {
+     font-size:2.2em;
+     font-weight:700;
+     text-align:center;
+     line-height:2em;
+}
+
+.columnA p, .columnB p, .columnC p {
+     font-size:1em;
+     text-align:justify;
+}
+
+p i {
+     font-size:1em;
+     text-align:justify;
+     clear:left;
+}
+
+.column span {
+     background-color:#37949b;
+     color:#FFFFFF;
+     display:block;
+     font-size:1.5em;
+     font-weight:600;
+     margin:0px;
+     padding:15px;
+     text-align:center;
+     text-transform:uppercase;
+}
+
+
+
+
+
+
+/*=======================================BUTTON STYLES=========================================*/
+
+a.button {
+     display:inline-block;
+     padding:10px 18px;
+     background-color:#37949b;
+     text-transform:uppercase;
+     font-weight:800;
+     font-size:1.2em;
+     color:#FFFFFF;
+     border-radius:4px;
+     margin:10px 0px;
+}
+
+div.center {
+     text-align:center;
+}
+
+a.button:hover {
+     background-color:#e6c200;
+     color:#FFFFFF;
+}
+
+p a {
+     color:#37949b;
+}
+
+p a:hover {
+     color:#e6c200;
+}
+
+#social {
+     text-align:center;
+     font-size:30px !important;
+}
+
+#social a i {
+     color:rgb(255, 255, 255);
+     margin:0px 25px -15px 25px;
+}
+
+#social a i:hover {
+     color:#e6c200;
+}
+
+
+/*==============================================ABOUT ME SECTION================================================*/
+
+.mainBody#aboutMe {
+     margin:50px 0px;
+}
+
+.asideHome-left {
+     width:384px;
+     float:left;
+     margin-right:24px;
+}
+
+.articleHome-right p {
+     text-align:justify;
+}
+
+
+
+
+/*=============================================FOOTER STYLES===============================================*/
+
+
+footer {
+     background-color:#37949b;
+     margin-left: -8px;
+     margin-right: -8px;
+     margin-bottom:0px;
+     padding-top: 19px;
+     padding-bottom: 1px;
+}
+footer p {
+     color:#FFFFFF;
+     text-align:center;
+     padding-top: 75px;
+}
+
+footer p a {
+     color:#FFFFFF;
+}
+
+#contactFooter {
+     margin-top:95px;
+}
+
+
+
+
+
+
+
